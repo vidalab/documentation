@@ -4,7 +4,7 @@
 @import 'variables';
 @import 'syntax';
 @import 'icon-font';
-@import 'documentation';
+@import 'user-guide';
 
 /*
 Copyright 2008-2013 Concur Technologies, Inc.
@@ -454,7 +454,9 @@ html, body {
 
   img {
 //    max-width: 100%;
-    max-width: 320px;
+    max-width: 240px;
+    max-height: 180px;
+    margin: 0 10px;
   }
 
   code {

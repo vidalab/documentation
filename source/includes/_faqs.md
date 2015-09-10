@@ -1,4 +1,6 @@
-# FAQS
+# FAQs
+
+(Work in progress)
 
 ## Browser Support
 
