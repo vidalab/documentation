@@ -43,33 +43,99 @@
         
           <h1 id="introduction">Introduction</h1>
 
-<p>This document describes important features of VIDA.IO web app.</p>
+<p>This document is VIDA.IO web app User Guide. </p>
 
           <h1 id="home">Home</h1>
 
-<p><a href="/images/home.png" data-lightbox="image-1" data-title="Vida Home Screen">
-  <img title="Logo Title Text 1" alt="alt text" src="images/home.png" />
+<p><a href="images/home/home.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+  <img title="Home After Login" alt="alt text" src="images/home/home.png" />
 </a></p>
 
-<h2 id="header-navigator">Header Navigator</h2>
+<p>After login, the app home shows a document explorer</p>
 
-<h3 id="explore">Explore</h3>
+<ul>
+<li>Top section: header</li>
+<li>Left section: document, user navigator</li>
+<li>Right section: document list</li>
+</ul>
 
-<h3 id="products-amp-services">Products &amp; Services</h3>
+<h2 id="header">Header</h2>
 
-<h3 id="notifications">Notifications</h3>
+<p><a href="images/home/header.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+  <img title="Header" alt="alt text" src="images/home/header.png" />
+</a></p>
 
-<h3 id="user-login-logout">User Login/Logout</h3>
+<p>The header contains the following menu options: </p>
+
+<ul>
+<li>Home url</li>
+<li>Explore</li>
+<li>Products &amp; Services</li>
+<li>Notification dropdown</li>
+<li>User name with logout drop down option</li>
+</ul>
+
+<h2 id="notifications">Notifications</h2>
+
+<p><a href="images/home/notification.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+  <img title="Notifications" alt="alt text" src="images/home/notification.png" />
+</a></p>
+
+<p>The notification button shows the unread messages. A dropdown panel of notifications will be shown upon click. 
+The panel will show the latest 20 notifications. </p>
 
 <h2 id="sidebar-navigator">Sidebar Navigator</h2>
 
+<p><a href="images/home/side-nav.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+  <img title="Notifications" alt="alt text" src="images/home/side-nav.png" />
+</a></p>
+
 <h2 id="document-list">Document List</h2>
+
+<p><a href="images/home/doc-list.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+  <img title="Notifications" alt="alt text" src="images/home/doc-list.png" />
+</a></p>
+
+<h2 id="new-document">New Document</h2>
+
+<p><a href="images/home/new-doc.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+  <img title="Notifications" alt="alt text" src="images/home/new-doc.png" />
+</a></p>
 
           <h1 id="d3-document-editor">D3 Document Editor</h1>
 
+<p><a href="images/d3/d3-editor.png" data-lightbox="image-1" data-title="D3 Editor" style="display: block; float:right;">
+  <img title="Header" alt="alt text" src="images/d3/d3-editor.png" />
+</a></p>
+
+<p>When creating or viewing a document, this window will show. It contains 2 parts: </p>
+
+<ul>
+<li>Left pane: canvas </li>
+<li>Right pane: editors</li>
+</ul>
+
 <h2 id="canvas">Canvas</h2>
 
+<p>This pane is the visual presentation of the document where it combines the code and data together. It has the following parts:</p>
+
+<ul>
+<li>Title: editable when clicking</li>
+<li>Description: editable when clicking</li>
+<li>Drawing: the vector drawing from the code will be placed here, and it&rsquo;s updated on the fly as you change the code </li>
+</ul>
+
 <h2 id="editors">Editors</h2>
+
+<p>This pane allows developers to code their visualizations or quickly configure them. It has the following tabs:</p>
+
+<ul>
+<li>Properties: show predefined properties for quickly configure and reuse the viz</li>
+<li>Javascript: code editor</li>
+<li>Stylesheet: style editor </li>
+<li>Data: data upload or quick import for different formats (CSV, TSV, JSON)</li>
+<li>Settings: set auto refresh, privacy, thumbnail, and get document share/embed code.</li>
+</ul>
 
 <h3 id="settings">Settings</h3>
 
@@ -83,27 +149,89 @@
 
 <h3 id="readme">Readme</h3>
 
-<h3 id="faqs">FAQS</h3>
+<h2 id="embed">Embed</h2>
 
-<h4 id="import-a-visualization">Import a Visualization</h4>
+<h2 id="privacy">Privacy</h2>
 
-<h4 id="safe-mode">Safe Mode</h4>
+<h2 id="external-import">External Import</h2>
+
+<p>To import a visualization, please use the correct tab</p>
+
+<ul>
+<li><p>HTML</p>
+
+<ul>
+<li>Additional HTML structure of a visualization</li>
+<li>A div#canvas-svg is recommended </li>
+</ul></li>
+<li><p>Javascript</p>
+
+<ul>
+<li>Do not use &lsquo;select(&ldquo;body&rdquo;)&rsquo; to append the svg. VIDA will automatically replace this with &#39;select(&ldquo;canvas-svg&rdquo;)&rsquo; instead.</li>
+<li>Use &#39;data&rsquo; variable for JSON data passed from Data tab</li>
+</ul></li>
+<li><p>Stylesheet (CSS)</p>
+
+<ul>
+<li>Styling code</li>
+</ul></li>
+<li><p>Data (CSV/TSV/JSON)</p>
+
+<ul>
+<li>Import or cut and paste data </li>
+<li>To access, use &#39;data&rsquo; variable in Javascript tab code</li>
+</ul></li>
+</ul>
+
+<h2 id="safe-mode">Safe Mode</h2>
+
+<p>This mode is automatically set on because javascript code failed to complete evaluation/execution. Some of the reasons include: </p>
+
+<ul>
+<li>being stucked in an infinite loop.</li>
+<li>bugs that terminate the javascript eval.</li>
+<li>taking too long and not finishing loading.</li>
+</ul>
+
+<p>If this is due to bugs, you need to fix and save the code. Debugger console can be helpful.</p>
+
+<p>Your code won&rsquo;t execute until this mode is disabled. You can disable this mode by going to Settings tab.</p>
 
           <h1 id="gist">Gist</h1>
 
+<p>(Work in progress)</p>
+
           <h1 id="composite-document">Composite Document</h1>
+
+<p>(Work in progress)</p>
 
           <h1 id="team">Team</h1>
 
+<p>(Work in progress)</p>
+
           <h1 id="google-chart">Google Chart</h1>
+
+<p>(Work in progress)</p>
 
           <h1 id="dataset">Dataset</h1>
 
+<p>(Work in progress)</p>
+
           <h1 id="profile">Profile</h1>
+
+<p>(Work in progress)</p>
 
           <h1 id="tutorials">Tutorials</h1>
 
-          <h1 id="faqs">FAQS</h1>
+<p><a href="https://www.youtube.com/watch?v=xMSykYiq3SY" target="_blank"> D3.js Tutorial 1: Append </a></p>
+
+<p><a href="https://www.youtube.com/watch?v=S37FZDH7VMo" target="_blank"> D3.js Tutorial 2: Select </a></p>
+
+<p><a href="https://www.youtube.com/channel/UCtswXB4Tz_S4vb57fBAQhmg" target="_blank"> View and Subscribe here </a></p>
+
+          <h1 id="faqs">FAQs</h1>
+
+<p>(Work in progress)</p>
 
 <h2 id="browser-support">Browser Support</h2>
 
