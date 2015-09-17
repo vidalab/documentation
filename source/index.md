@@ -3,6 +3,7 @@ title: VIDA.IO Web App Documentation
 
 toc_footers:
   - <a href='https://vida.io' target="_blank">VIDA.IO</a>
+  - Last updated 09/15/2015
 
 includes:
   - intro
@@ -13,8 +14,7 @@ includes:
   - team
   - gchart
   - dataset
-  - profile
-  - tutorials
+  - resources
   - faqs
 
 search: true
