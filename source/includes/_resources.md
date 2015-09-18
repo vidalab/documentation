@@ -1,5 +1,12 @@
 # Additional Resources
 
+## Our '911' call
+
+Users can contact and get help immediately by:
+
+* Send an email to contact@vida.io
+* Send a UserVoice request using the bottom right question mark
+
 <a href="https://www.youtube.com/watch?v=xMSykYiq3SY" target="_blank"> D3.js Tutorial 1: Append </a>
 
 <a href="https://www.youtube.com/watch?v=S37FZDH7VMo" target="_blank"> D3.js Tutorial 2: Select </a>
