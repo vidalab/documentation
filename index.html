@@ -166,8 +166,8 @@ The panel will show the latest 20 notifications. </p>
 </ul>
 
 <p>When creating a new document from built-in templates, a new and complete document will be created.
-The last option in this list is the &lsquo;Import Github&rsquo;. This feature allows users to import VIDA compatible documents from GitHub. 
-For VIDA compatible structure, please visit <a href='https://github.com/vidalab/document_template' target='_blank'>Vida GitHub Template</a></p>
+The last option in this list is the &lsquo;Import Github&rsquo;. This feature is used to import VIDA compatible documents from GitHub. 
+For VIDA compatible structure, please visit <a href='https://github.com/vidalab/document_template' target='_blank'>Vida GitHub Template</a>.</p>
 
 <p>When creating a new document from user-set templates, a template child document will be created.</p>
 
@@ -189,7 +189,7 @@ For VIDA compatible structure, please visit <a href='https://github.com/vidalab/
 </ul></li>
 <li>Save - comes with a shortcut as &#39;Ctrl+Return&rsquo;</li>
 <li>Clone - clones current document. When cloning a template, the newly cloned document will become a child document.</li>
-<li>More option - allows custom view window arrangement</li>
+<li>More option (horizontal ellipsis)- allows custom view window arrangement</li>
 </ul>
 
 <h2 id="canvas">Canvas</h2>
@@ -223,7 +223,7 @@ For VIDA compatible structure, please visit <a href='https://github.com/vidalab/
 <li>Privacy - allow document to be public/unlisted/private. 
 
 <ul>
-<li>Public - can be seen and searched by users</li>
+<li>Public - can be seen and searched by any user</li>
 <li>Unlisted - cannot be searched, but can be seen to whoever has the document URL</li>
 <li>Private - can only be seen by owner and shared individuals/teams</li>
 </ul></li>
@@ -397,57 +397,76 @@ By detaching from its parent, it will no longer receive any code update from the
 <li>Updating data and properties doesn&rsquo;t change its parent and siblings&rsquo; data or properties.</li>
 </ul>
 
-<h2 id="embed">Embed</h2>
+<h2 id="embed-amp-share">Embed &amp; Share</h2>
 
 <p><a href="images/d3/embed.png" data-lightbox="d3-document" data-title="Embed Document" style="display: block; float:right;">
   <img title="Embed" alt="alt text" src="images/d3/embed.png" />
 </a></p>
 
-<h2 id="external-import">External Import</h2>
+<p>Embed feature is used to present the current visual part of the document on an external site. 
+This option is available under through </p>
 
-<p>To import a visualization, please use the correct tab</p>
+<p><strong>File &gt; Get Embed Code</strong></p>
 
-<ul>
-<li><p>HTML</p>
+<p>The dimensions of the embed document is automatically built into the URL if the document has width and height properties set up.</p>
 
-<ul>
-<li>Additional HTML structure of a visualization</li>
-<li>A div#canvas-svg is recommended </li>
-</ul></li>
-<li><p>Javascript</p>
+<p>There are two (2) different URL for embedding a document:</p>
 
 <ul>
-<li>Do not use &#39;select(&ldquo;body&rdquo;)&rsquo; to append the svg. VIDA will automatically replace this with &#39;select(&ldquo;canvas-svg&rdquo;)&rsquo; instead.</li>
-<li>Use &#39;data&rsquo; variable for JSON data passed from Data tab</li>
-</ul></li>
-<li><p>Stylesheet (CSS)</p>
-
-<ul>
-<li>Styling code</li>
-</ul></li>
-<li><p>Data (CSV/TSV/JSON)</p>
-
-<ul>
-<li>Import or cut and paste data </li>
-<li>To access, use &#39;data&rsquo; variable in Javascript tab code</li>
-</ul></li>
+<li>HTTP - HyperText Transfer Protocol (faster)</li>
+<li>HTTPS - Secure HTTP (slower)</li>
 </ul>
+
+<p>The Share option is also availble within this dialog window. 
+If the document is public or unlisted, anybody with the share URL will be able to see the public page of the document.
+If the document is private, only owner and shared users can access the document public or edit page.</p>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>While editing a document, owner can test and view the public page through menu <strong>More Options (ellipsis icon) &gt; View public page</strong>.</li>
+<li>The &#39;Test Embed&rsquo; button shows a visual part of the document on a separate page.</li>
+</ul>
+
+<h2 id="import">Import</h2>
+
+<p>There are two (2) ways to import a visualization to Vida. </p>
+
+<h3 id="vida-document-format">Vida document format</h3>
+
+<p>Please visit <a href='https://github.com/vidalab/document_template' target='_blank'>Vida Document Template</a> for more details.</p>
+
+<h3 id="manually">Manually</h3>
+
+<p>Users need to follow Vida document format to enture proper imports. Please visit section <strong>D3 Docuemnt / Editors</strong>.</p>
 
 <h2 id="debug">Debug</h2>
 
+<h3 id="how-to">How to</h3>
+
+<p>Debugging a Vida d3 document is similar to debuging any javacript code. Chrome debugging console is recommended for this task.</p>
+
+<p>The document code is inserted at the bottom of the each page. 
+To set a break point any where within the code, developers can insert a &#39;debugger;&rsquo; statement right before the wanted break point and then save the document.
+By doing this, the Chrome console will automatically break when the re-execution happens.</p>
+
 <h3 id="safe-mode">Safe Mode</h3>
 
-<p>This mode is automatically set on because javascript code failed to complete evaluation/execution. Some of the reasons include: </p>
+<p>Developers often find their code takes too long or even got stuck and unable to load or reload.
+This is due to the javascript execution could not be completed. 
+One common mistake is having the code running an infinite loop or a very long process.</p>
 
-<ul>
-<li>being stucked in an infinite loop.</li>
-<li>bugs that terminate the javascript eval.</li>
-<li>taking too long and not finishing loading.</li>
-</ul>
+<p>Turning on the safe mode will help developers to fix these cases. This mode doesn&rsquo;t execute the javascript unless disabled again.</p>
 
-<p>If this is due to bugs, you need to fix and save the code. Debugger console can be helpful.</p>
+<p>To turn on safe mode, go to <strong>Home / D3 Documents</strong> and from the document list select the bug icon on the target document.
+Once the bug is lit up, loading the document again will not execute the javascript code.</p>
 
-<p>Your code won&rsquo;t execute until this mode is disabled. You can disable this mode by going to Settings tab.</p>
+<p>To turn off this mode, document owner can click on the bug icon within the top menu bar to disable it. 
+This option can be done similarly as turning on in the document list with the bug icon.</p>
+
+<p><strong>Notes:</strong>
+* Canvas svg rendering will not run unless this mode is disabled.
+* Enabling this will stop embed rendering.</p>
 
           <h1 id="gist">Gist</h1>
 
