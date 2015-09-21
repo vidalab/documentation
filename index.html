@@ -8,6 +8,7 @@
 
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+    <link href="stylesheets/user_guide.css" rel="stylesheet" type="text/css" media="screen" />
         
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -36,6 +37,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='https://vida.io' target="_blank">VIDA.IO</a></li>
+            <li>Last updated 09/15/2015</li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -47,7 +49,7 @@
 
           <h1 id="home">Home</h1>
 
-<p><a href="images/home/home.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+<p><a href="images/home/home.png" data-lightbox="home-screen" data-title="Home" style="display: block; float:right;">
   <img title="Home After Login" alt="alt text" src="images/home/home.png" />
 </a></p>
 
@@ -59,13 +61,13 @@
 <li>Right section: document list</li>
 </ul>
 
-<h2 id="header">Header</h2>
+<h2 id="top-menu">Top Menu</h2>
 
-<p><a href="images/home/header.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+<p><a href="images/home/header.png" data-lightbox="home-screen" data-title="Header" style="display: block; float:right;">
   <img title="Header" alt="alt text" src="images/home/header.png" />
 </a></p>
 
-<p>The header contains the following menu options: </p>
+<p>The top menu contains the following options: </p>
 
 <ul>
 <li>Home url</li>
@@ -77,36 +79,69 @@
 
 <h2 id="notifications">Notifications</h2>
 
-<p><a href="images/home/notification.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
+<p><a href="images/home/notification.png" data-lightbox="home-screen" data-title="Notifications" style="display: block; float:right;">
   <img title="Notifications" alt="alt text" src="images/home/notification.png" />
 </a></p>
 
 <p>The notification button shows the unread messages. A dropdown panel of notifications will be shown upon click. 
 The panel will show the latest 20 notifications. </p>
 
-<h2 id="sidebar-navigator">Sidebar Navigator</h2>
+<h2 id="sidebar-menu">Sidebar Menu</h2>
 
-<p><a href="images/home/side-nav.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
-  <img title="Notifications" alt="alt text" src="images/home/side-nav.png" />
+<p><a href="images/home/side-nav.png" data-lightbox="home-screen" data-title="Sidebar Menu" style="display: block; float:right;">
+  <img title="Sidebar Menu" alt="alt text" src="images/home/side-nav.png" />
 </a></p>
+
+<p>This section contains menu options to access all of our supported documents (d3, Google chart, gist, composite) and user profile page.</p>
 
 <h2 id="document-list">Document List</h2>
 
-<p><a href="images/home/doc-list.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
-  <img title="Notifications" alt="alt text" src="images/home/doc-list.png" />
+<p><a href="images/home/doc-list.png" data-lightbox="home-screen" data-title="Document List" style="display: block; float:right;">
+  <img title="Document List" alt="alt text" src="images/home/doc-list.png" />
 </a></p>
 
-<h2 id="new-document">New Document</h2>
+<p>Once a document type is selected on the sidebar, a document list displays all of user&rsquo;s owned/shared/starred documents.</p>
 
-<p><a href="images/home/new-doc.png" data-lightbox="image-1" data-title="Vida Home Screen" style="display: block; float:right;">
-  <img title="Notifications" alt="alt text" src="images/home/new-doc.png" />
+<p>Shared and starred documents are d3 sub-category documents that are displayed under D3 documents.</p>
+
+<p>This section comes with a header bar action on top that includes a button to create a new document, sorting buttons, and total number of documents.</p>
+
+<p>For D3 document, a document in this list contains extra information including:</p>
+
+<ul>
+<li>Template/child document icon (mark with a solid/blank circle)</li>
+<li>Sharing icon (individual or team)</li>
+<li>Privacy icon (a lock for private, open lock for unlisted, no icon for public )</li>
+<li>Created date</li>
+<li>Check box for batch action such as delete</li>
+</ul>
+
+<h2 id="profile-settings">Profile Settings</h2>
+
+<p><a href="images/home/profile.png" data-lightbox="home-screen" data-title="Profile" style="display: block; float:right;">
+  <img title="Profile" alt="alt text" src="images/home/profile.png" />
 </a></p>
 
-          <h1 id="d3-document-editor">D3 Document Editor</h1>
+<p>This section contains user or company information and some profile settings.</p>
 
-<p><a href="images/d3/d3-editor.png" data-lightbox="image-1" data-title="D3 Editor" style="display: block; float:right;">
+<ul>
+<li>User or company name (editable)</li>
+<li>Username (editable) - a public profile page with all users&rsquo; visualizations through the URL &lsquo;vida.io/username&rsquo;</li>
+<li>Email (non-editable)</li>
+<li>Joined date and time</li>
+<li>Created-by URL (PRO subscription only) - this allows a custom signature URL for users when embedding visualizations.</li>
+<li>Created-by image - this follows the above feature to replace text with a custom image (i.e. company&rsquo;s logo)</li>
+<li>Google analytics tracking ID - this setup analytics callback for all users&rsquo; owned visualizations.</li>
+<li>Subscription information</li>
+</ul>
+
+          <h1 id="d3-document">D3 Document</h1>
+
+<p><a href="images/d3/d3-editor.png" data-lightbox="d3-document" data-title="Edit Screen" style="display: block; float:right;">
   <img title="Header" alt="alt text" src="images/d3/d3-editor.png" />
 </a></p>
+
+<p>This section is entirely for D3 documents only. Other types of documents may or many not have similar features. </p>
 
 <p>When creating or viewing a document, this window will show. It contains 2 parts: </p>
 
@@ -115,43 +150,258 @@ The panel will show the latest 20 notifications. </p>
 <li>Right pane: editors</li>
 </ul>
 
-<h2 id="canvas">Canvas</h2>
+<h2 id="create-new">Create New</h2>
 
-<p>This pane is the visual presentation of the document where it combines the code and data together. It has the following parts:</p>
+<p><a href="images/d3/new-doc.png" data-lightbox="d3-document" data-title="New Document" style="display: block; float:right;">
+  <img title="New Document" alt="alt text" src="images/d3/new-doc.png" />
+</a></p>
+
+<p>To create a new d3 document, on home screen after login go to: <strong>D3 Documents &gt; New Document</strong></p>
+
+<p>This new doucment list includes two separate set of templates:</p>
 
 <ul>
-<li>Title: editable when clicking</li>
-<li>Description: editable when clicking</li>
-<li>Drawing: the vector drawing from the code will be placed here, and it&rsquo;s updated on the fly as you change the code </li>
+<li>Basic built in templates </li>
+<li>User-set templates </li>
 </ul>
+
+<p>When creating a new document from built-in templates, a new and complete document will be created.
+The last option in this list is the &lsquo;Import Github&rsquo;. This feature allows users to import VIDA compatible documents from GitHub. 
+For VIDA compatible structure, please visit <a href='https://github.com/vidalab/document_template' target='_blank'>Vida GitHub Template</a></p>
+
+<p>When creating a new document from user-set templates, a template child document will be created.</p>
+
+<p><strong>Notes:</strong> user-set templates are regular documents and must have &#39;No-clone&rsquo; disabled in order to show up in the list.</p>
+
+<h2 id="top-menu">Top Menu</h2>
+
+<p>This is designed to have similar user experience with a desktop app. It contains the following options (left to right):</p>
+
+<ul>
+<li>Vida logo - go back home</li>
+<li>D3 text - d3 document editor indicator</li>
+<li>File menu with additional dropdown options:
+
+<ul>
+<li>Get Embed Code - gets embed URLs for current document</li>
+<li>Delete - removes current document</li>
+<li>Exit - exits current edit document to go back home</li>
+</ul></li>
+<li>Save - comes with a shortcut as &#39;Ctrl+Return&rsquo;</li>
+<li>Clone - clones current document. When cloning a template, the newly cloned document will become a child document.</li>
+<li>More option - allows custom view window arrangement</li>
+</ul>
+
+<h2 id="canvas">Canvas</h2>
+
+<p>This section contains the visual presentation of the document where it combines the code, data, properties and styles together. It has three(3) different sections:</p>
+
+<ul>
+<li>Title: editable when selected</li>
+<li>Description: editable when selected</li>
+<li>SVG rendering space: the vector drawing from current document. This will be re-drawn upon the following triggers:
+
+<ul>
+<li>Save - when there&rsquo;s a code change and the document is being saved</li>
+<li>Property change - a property change will immediately render a new SVG</li>
+</ul></li>
+</ul>
+
+<p><strong>Notes:</strong> Saving a document with no change will not trigger the re-rendering.</p>
 
 <h2 id="editors">Editors</h2>
 
-<p>This pane allows developers to code their visualizations or quickly configure them. It has the following tabs:</p>
+<p>This sections contains the most important data for a document including settings. It contains the following tabs:</p>
+
+<h3 id="settings-ctrl-1">Settings (Ctrl+1)</h3>
+
+<p>This tab shows all the possible settings for a regular document</p>
 
 <ul>
-<li>Properties: show predefined properties for quickly configure and reuse the viz</li>
-<li>Javascript: code editor</li>
-<li>Stylesheet: style editor </li>
-<li>Data: data upload or quick import for different formats (CSV, TSV, JSON)</li>
-<li>Settings: set auto refresh, privacy, thumbnail, and get document share/embed code.</li>
-</ul>
+<li>Template switch (regular doucment) or Template detach (child document)</li>
+<li>Sharing - share with individuals or teams</li>
+<li>Privacy - allow document to be public/unlisted/private. 
 
-<h3 id="settings">Settings</h3>
+<ul>
+<li>Public - can be seen and searched by users</li>
+<li>Unlisted - cannot be searched, but can be seen to whoever has the document URL</li>
+<li>Private - can only be seen by owner and shared individuals/teams</li>
+</ul></li>
+<li>Resource - import external javascript and stylesheet libraries. This also provides a list with some preloaded and suggested resources.</li>
+<li>Tags - allows documents to be searched and indexed properly</li>
+<li>Embed Custom Signature (PRO subscription only) when embed
+
+<ul>
+<li>Text</li>
+<li>URL (redirect URL)</li>
+</ul></li>
+<li>Embed Widget switch - show/hide embed widget</li>
+<li>General info </li>
+<li>No clone - enable/disable cloning</li>
+<li>Thumbnail - public image for the current document</li>
+</ul>
 
 <h3 id="data">Data</h3>
 
+<p><a href="images/d3/data-tab.png" data-lightbox="d3-document" data-title="New Document" style="display: block; float:right;">
+  <img title="New Document" alt="alt text" src="images/d3/data-tab.png" />
+</a></p>
+
+<p>This tab contains a data editor. Users can choose to import data from a file. There&rsquo;re three (3) supported data type:</p>
+
+<ul>
+<li>CSV</li>
+<li>TSV</li>
+<li>JSON</li>
+</ul>
+
+<p>Once saved, the parsed data is piped through the javascript code as &#39;data&rsquo; variable with JSON structure. 
+To better understand, one may print the structure in debug console.</p>
+
+<p>This data tab has the editor shown as default. A grid can be viewed (non-editable) once data is saved first.</p>
+
+<p>A d3 document can utilize a dataset document as its own data by setting a dataseting in this tab.
+If a dataset is selected, all current document data will be removed. 
+If a dataset is removed, the current data from dataset document is copied to the current d3 document.</p>
+
+<h3 id="properties">Properties</h3>
+
+<p><a href="images/d3/prop-tab.png" data-lightbox="d3-document" data-title="New Document" style="display: block; float:right;">
+  <img title="New Document" alt="alt text" src="images/d3/prop-tab.png" />
+</a></p>
+
+<p>Properties feature is one of the important feature that makes d3 documents versatile. 
+By defining a document properties, the owner allow document customization and any other user can quickly clone and turn it into his needs.</p>
+
+<p>There are five (5) supported types based on javascript types:</p>
+
+<ul>
+<li>Data Column - string type for column name parsed from data</li>
+<li>Number - number type</li>
+<li>String - string type</li>
+<li>Boolean - boolean type</li>
+<li>Color - hex string (ex: &rsquo;#0C5175&rsquo;)</li>
+</ul>
+
+<p><strong>Notes:</strong> </p>
+
+<ul>
+<li>Properties can be changed only by document owner and shared users with edit access.</li>
+<li>A template child cannot change its properties. They&rsquo;re only available for the template document.</li>
+<li>When a property changes, the document will be saved and re-rendering will be triggered automatically .</li>
+</ul>
+
 <h3 id="javascript">Javascript</h3>
+
+<p><a href="images/d3/javascript-tab.png" data-lightbox="d3-document" data-title="New Document" style="display: block; float:right;">
+  <img title="New Document" alt="alt text" src="images/d3/javascript-tab.png" />
+</a></p>
+
+<p>Javascript code is at heart of a d3 document. This code block will be wrapped inside an anonymous function before execution.
+&#39;data&rsquo; variable contains the parsed JSON from Data tab. 
+&#39;config&rsquo; variable contains the properties set in Properties tab. To use properties, use config[&ldquo;propertyName&rdquo;] or config.propertyName within the code.</p>
+
+<p>A div with id &#39;canvas-svg&rsquo; is dedicated for d3 svg rendering. 
+Rendering outside this div may result unexpected behavior and UI misalignment. </p>
+
+<p>When saving a document with javascript/html/stylesheet/data changes, a re-rendering will be trigger. 
+Saving a document without any change will not trigger re-rendering.</p>
+
+<p><strong>Notes:</strong>
+* Defining any &#39;data&rsquo; and &#39;config&rsquo; variable internally within the code will overwrite the passing through ones.
+* When cut and paste external code, the pseudo code &#39;select(&ldquo;body&rdquo;)&rsquo; will automatically be replaced by &#39;select(&ldquo;canvas-svg&rdquo;)&rsquo;.</p>
 
 <h3 id="stylesheet">Stylesheet</h3>
 
+<p><a href="images/d3/css-tab.png" data-lightbox="d3-document" data-title="New Document" style="display: block; float:right;">
+  <img title="New Document" alt="alt text" src="images/d3/css-tab.png" />
+</a></p>
+
+<p>This editor contains the normal basic stylesheet code. </p>
+
+<p><strong>Notes:</strong>
+* Use class or id specific to style elements related the visualization only
+* Avoid using styling that alters this webapp (Example: html, body, h1, a, etc.). Your documents may get flagged if doing so.</p>
+
 <h3 id="html">HTML</h3>
+
+<p>This editor contains the normal basic stylesheet code. 
+This code block will be within inserted inside &rsquo;#canvas&rsquo; div.
+The d3 svg will be rendered within &rsquo;#canvas-svg&rsquo; which can be placed anywhere within this HTML code block.</p>
+
+<p><strong>Notes:</strong>
+3. Do not define an html page here, i.e. including html, head, body tags.</p>
 
 <h3 id="readme">Readme</h3>
 
+<p>This editor contains markdown content for the document. This content is shown right below the document svg for its public page.</p>
+
+<p>For how to write a markdown document, please visit 
+<a href="http://daringfireball.net/projects/markdown/" tagert="_blank"> Daring Fireball </a></p>
+
+<h3 id="shortcuts">Shortcuts</h3>
+
+<p>These tabs have some shortcuts that may be useful for frequent use.</p>
+
+<ul>
+<li>Ctrl + number (1,2,3,4,5,6) - change editor tabs</li>
+<li>Ctrl + Enter - save document</li>
+<li>Ctrl + &rsquo;/&rsquo; - enable/disable canvas full view</li>
+</ul>
+
+<h2 id="templates">Templates</h2>
+
+<p>A document can be set as a template using the Template switch in Settings tab. By setting this, any further documents that are cloned from this template will be the children. </p>
+
+<h3 id="parent">Parent</h3>
+
+<p><a href="images/d3/template.png" data-lightbox="d3-document" data-title="Template Document" style="display: block; float:right;">
+  <img title="Header" alt="alt text" src="images/d3/template.png" />
+</a></p>
+
+<p>A parent template or template is a regular document. When updating a template, its javascript, html and css code will be synchronized across its children. 
+Data and properties&rsquo; values are unchanged within its children. Settings, data and properties are not synced across its children.</p>
+
+<p>If the template mode is switched off, all of its children will be disconnected from then and any update will not change its previously children.</p>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>After the parent template is switched off, children documents are still in children mode. Users need to &#39;detach&rsquo; them to make them fully independent.</li>
+</ul>
+
+<h3 id="child">Child</h3>
+
+<p><a href="images/d3/template-child.png" data-lightbox="d3-document" data-title="Child Document" style="display: block; float:right;">
+  <img title="Header" alt="alt text" src="images/d3/template-child.png" />
+</a></p>
+
+<p>A child document can only apply its own settings, data set and properties. The underlying code are mirrored from its parent template. </p>
+
+<p>When the template document has changes, javascript/html/stylesheet code will be synchronized across its children. 
+Thus, there&rsquo;re only three (3) tabs shown in a child:</p>
+
+<ul>
+<li>Settings</li>
+<li>Data</li>
+<li>Properties</li>
+</ul>
+
+<p>Users may detach a child from its parent and turn it into a regular document through &#39;Detach&rsquo; button in Settings tab.
+By detaching from its parent, it will no longer receive any code update from the parent. This action is not reversible.</p>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>Properties cannot be changed through a child.</li>
+<li>Updating data and properties doesn&rsquo;t change its parent and siblings&rsquo; data or properties.</li>
+</ul>
+
 <h2 id="embed">Embed</h2>
 
-<h2 id="privacy">Privacy</h2>
+<p><a href="images/d3/embed.png" data-lightbox="d3-document" data-title="Embed Document" style="display: block; float:right;">
+  <img title="Embed" alt="alt text" src="images/d3/embed.png" />
+</a></p>
 
 <h2 id="external-import">External Import</h2>
 
@@ -167,7 +417,7 @@ The panel will show the latest 20 notifications. </p>
 <li><p>Javascript</p>
 
 <ul>
-<li>Do not use &lsquo;select(&ldquo;body&rdquo;)&rsquo; to append the svg. VIDA will automatically replace this with &#39;select(&ldquo;canvas-svg&rdquo;)&rsquo; instead.</li>
+<li>Do not use &#39;select(&ldquo;body&rdquo;)&rsquo; to append the svg. VIDA will automatically replace this with &#39;select(&ldquo;canvas-svg&rdquo;)&rsquo; instead.</li>
 <li>Use &#39;data&rsquo; variable for JSON data passed from Data tab</li>
 </ul></li>
 <li><p>Stylesheet (CSS)</p>
@@ -183,7 +433,9 @@ The panel will show the latest 20 notifications. </p>
 </ul></li>
 </ul>
 
-<h2 id="safe-mode">Safe Mode</h2>
+<h2 id="debug">Debug</h2>
+
+<h3 id="safe-mode">Safe Mode</h3>
 
 <p>This mode is automatically set on because javascript code failed to complete evaluation/execution. Some of the reasons include: </p>
 
@@ -199,45 +451,79 @@ The panel will show the latest 20 notifications. </p>
 
           <h1 id="gist">Gist</h1>
 
-<p>(Work in progress)</p>
+<p><a href="images/gist/gist.png" data-lightbox="gist-document" data-title="Gist Editor" style="display: block; float:right;">
+  <img title="Gist" alt="alt text" src="images/gist/gist.png" />
+</a></p>
+
+<h2 id="import-new">Import New</h2>
 
           <h1 id="composite-document">Composite Document</h1>
 
-<p>(Work in progress)</p>
+<p><a href="images/comp/comp-doc.png" data-lightbox="comp-document" data-title="Composite Document Editor" style="display: block; float:right;">
+  <img title="Composite Document" alt="alt text" src="images/comp/comp-doc.png" />
+</a></p>
+
+<h2 id="create-new">Create New</h2>
 
           <h1 id="team">Team</h1>
 
-<p>(Work in progress)</p>
+<p><a href="images/team/team.png" data-lightbox="team" data-title="Team" style="display: block; float:right;">
+  <img title="Team" alt="alt text" src="images/team/team.png" />
+</a></p>
+
+<h2 id="create-new">Create New</h2>
 
           <h1 id="google-chart">Google Chart</h1>
 
-<p>(Work in progress)</p>
+<p><a href="images/gchart/gchart.png" data-lightbox="gchart" data-title="GChart" style="display: block; float:right;">
+  <img title="Team" alt="alt text" src="images/gchart/gchart.png" />
+</a></p>
+
+<h2 id="create-new">Create New</h2>
 
           <h1 id="dataset">Dataset</h1>
 
-<p>(Work in progress)</p>
+<p><a href="images/dataset/dataset.png" data-lightbox="dataset" data-title="Dataset" style="display: block; float:right;">
+  <img title="Team" alt="alt text" src="images/dataset/dataset.png" />
+</a></p>
 
-          <h1 id="profile">Profile</h1>
+<h2 id="create-new">Create New</h2>
 
-<p>(Work in progress)</p>
+          <h1 id="additional-resources">Additional Resources</h1>
 
-          <h1 id="tutorials">Tutorials</h1>
+<h2 id="our-39-911-39-call">Our &lsquo;911&rsquo; call</h2>
+
+<p>Users can contact and get help immediately by:</p>
+
+<ul>
+<li>Send an email to contact@vida.io</li>
+<li>Send a UserVoice request using the bottom right question mark</li>
+</ul>
 
 <p><a href="https://www.youtube.com/watch?v=xMSykYiq3SY" target="_blank"> D3.js Tutorial 1: Append </a></p>
 
 <p><a href="https://www.youtube.com/watch?v=S37FZDH7VMo" target="_blank"> D3.js Tutorial 2: Select </a></p>
 
-<p><a href="https://www.youtube.com/channel/UCtswXB4Tz_S4vb57fBAQhmg" target="_blank"> View and Subscribe here </a></p>
+<p><a href="https://www.youtube.com/channel/UCtswXB4Tz_S4vb57fBAQhmg" target="_blank"> View and Subscribe </a></p>
+
+<p><a href="http://nbviewer.ipython.org/github/vidalab/vida-notebook/blob/master/visualizations.ipynb" target="_blank"> Data Visualizations for IPython Notebooks</a></p>
 
           <h1 id="faqs">FAQs</h1>
 
-<p>(Work in progress)</p>
+<h2 id="what-browsers-are-supported">What browsers are supported?</h2>
 
-<h2 id="browser-support">Browser Support</h2>
+<p>The following browsers are supported:</p>
 
-<h2 id="browser-resolution">Browser Resolution</h2>
+<ul>
+<li>Chrome 30+</li>
+<li>Internet Explorer 10+ or Microsoft Edge</li>
+</ul>
 
-<h2 id="mobile-devices">Mobile Devices</h2>
+<p>The app should work mostly with any modern browsers including FireFox, Safari. However, they&rsquo;re not officially supported and may result with errors.</p>
+
+<h2 id="what-are-the-browser-resolutions-supported">What are the browser resolutions supported?</h2>
+
+<p>We have optimized our app view to work with resolution of 980x674 or higher. Lower resolutions are not recommended for document editing.</p>
 
       </div>
     </div>
