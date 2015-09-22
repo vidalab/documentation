@@ -3,4 +3,8 @@
   ![alt text](./comp/comp-doc.png "Composite Document")
 </a>
 
-## Create New
+**Important:** This feature is in beta.
+
+This tool helps quickly building complex visualizations by combining already alvailable d3 documents together.
+
+(Work in progress, please check back for more information)
