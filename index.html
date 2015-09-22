@@ -474,7 +474,33 @@ This option can be done similarly as turning on in the document list with the bu
   <img title="Gist" alt="alt text" src="images/gist/gist.png" />
 </a></p>
 
+<p>This tool is used port and publish back GitHub gist to and from Vida system. 
+It helps developer of any level experiment any gist and see the changes in action. 
+The edit view is designed to have similar user experience with a d3 document one. </p>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>This is incompatible with Vida d3 document format. </li>
+<li>This doesn&rsquo;t include most features supported for a d3 document. To fully utilize these feature, consider porting a gist to a Vida-d3 document format.</li>
+</ul>
+
 <h2 id="import-new">Import New</h2>
+
+<p>To import a gist, go to <strong>Home / Gist</strong>, select <strong>Import Gist (Block)</strong> from the document list top left menu.
+Once successfully imported, the gist edit view will show up with top menu bar, &rsquo;#canvas-svg&rsquo; div on the left, the settings and editors on the right.</p>
+
+<h2 id="save-and-publish-to-github">Save and Publish to GitHub</h2>
+
+<p>When a gist has any changes, the re-rendering will trigger once the document is saved (using &lsquo;Save&rsquo; button or &#39;Ctrl+Return&rsquo; shortcut).
+This action only saves the document within Vida internal system. To replicate these changes on GitHub, developers need to publish them back.
+To publish, follow the following steps:</p>
+
+<ul>
+<li>Select <strong>Connect to GitHub</strong> button in <strong>Settings</strong> tab, and allow GitHub authentication.</li>
+<li>When connected, click <strong>Select a Gist</strong> dropdown menu option, and select the target gist.</li>
+<li>Click <strong>Push</strong> to complete publishing.</li>
+</ul>
 
           <h1 id="composite-document">Composite Document</h1>
 
@@ -482,7 +508,11 @@ This option can be done similarly as turning on in the document list with the bu
   <img title="Composite Document" alt="alt text" src="images/comp/comp-doc.png" />
 </a></p>
 
-<h2 id="create-new">Create New</h2>
+<p><strong>Important:</strong> This feature is in beta.</p>
+
+<p>This tool helps quickly building complex visualizations by combining already alvailable d3 documents together.</p>
+
+<p>(Work in progress, please check back for more information)</p>
 
           <h1 id="team">Team</h1>
 
@@ -490,7 +520,56 @@ This option can be done similarly as turning on in the document list with the bu
   <img title="Team" alt="alt text" src="images/team/team.png" />
 </a></p>
 
+<p>Team feature helps developers manage different access levels for their documents for different groups of users. </p>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>This feature is integrated with Vida d3 documents only. Other types are not yet supported.</li>
+</ul>
+
 <h2 id="create-new">Create New</h2>
+
+<p>To create a new team, on home screen after login go to: <strong>Teams &gt; New Team</strong></p>
+
+<h2 id="privacy">Privacy</h2>
+
+<p>The team privacy can be set with the following three (3) states:</p>
+
+<ul>
+<li>Public - can be seen and searched by any user</li>
+<li>Unlisted - cannot be searched, but can be seen to whoever has the team URL</li>
+<li>Private - can only be seen by owner and shared individuals</li>
+</ul>
+
+<h2 id="documents">Documents</h2>
+
+<p>This list shows all the documents shared within the team. 
+Any member of the team can share their documents within the team. </p>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>Only documents without any individual collaborator can be added to a team.</li>
+</ul>
+
+<h2 id="members">Members</h2>
+
+<p>This list show all the members with their access level within the team.
+There 4 different access levels for a member:</p>
+
+<ul>
+<li>Team admin - can edit the team documents and members, can also edit document</li>
+<li>Can Edit Document - can edit any documents shared within the team</li>
+<li>Can View Document - can view any documents shared within the team including private ones</li>
+<li>Can View Standalon - can only view shared documents, and view is presented in a standalone/embed mode</li>
+</ul>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>A member is not yet a team member if he hasn&rsquo;t accept the team invitation. Thus, he cannot access documents within a team.</li>
+</ul>
 
           <h1 id="google-chart">Google Chart</h1>
 
@@ -498,7 +577,31 @@ This option can be done similarly as turning on in the document list with the bu
   <img title="Team" alt="alt text" src="images/gchart/gchart.png" />
 </a></p>
 
-<h2 id="create-new">Create New</h2>
+<p>This wizard tool is a wrapper on top of Google Charts api for quickly build a google chart.</p>
+
+<p>There are 9 supported chart types:</p>
+
+<ul>
+<li>Line</li>
+<li>Bar</li>
+<li>Horizontal Bar</li>
+<li>Area</li>
+<li>Pie</li>
+<li>Bubble</li>
+<li>Geo Map</li>
+<li>Scatter Plot</li>
+<li>Tree Map</li>
+</ul>
+
+<p>To create a new chart, on home screen after login go to: <strong>Google Charts &gt; New Chart</strong></p>
+
+<p>There are three (3) sections for a Google chart document:</p>
+
+<ol>
+<li>Data - requires a dataset document</li>
+<li>Properties - configures chart properties</li>
+<li>Chart - a renderred chart svg from Google chart api</li>
+</ol>
 
           <h1 id="dataset">Dataset</h1>
 
@@ -506,11 +609,21 @@ This option can be done similarly as turning on in the document list with the bu
   <img title="Team" alt="alt text" src="images/dataset/dataset.png" />
 </a></p>
 
-<h2 id="create-new">Create New</h2>
+<p>This tool is used to build datasets that can be used in Vida d3 documents and Google Charts. 
+A dataset can be shared across multiple documents. </p>
+
+<p>To create a new chart, on home screen after login go to: <strong>Datasets &gt; New Dataset</strong></p>
+
+<p>A dataset can be imported from a file or a data URL (JSON).</p>
+
+<p>A dataset has similar privacy settings as a d3 document:
+* Public
+* Unlisted
+* Private</p>
 
           <h1 id="additional-resources">Additional Resources</h1>
 
-<h2 id="our-39-911-39-call">Our &lsquo;911&rsquo; call</h2>
+<h2 id="support">Support</h2>
 
 <p>Users can contact and get help immediately by:</p>
 
@@ -518,6 +631,8 @@ This option can be done similarly as turning on in the document list with the bu
 <li>Send an email to contact@vida.io</li>
 <li>Send a UserVoice request using the bottom right question mark</li>
 </ul>
+
+<h2 id="tutorials-and-videos">Tutorials and videos</h2>
 
 <p><a href="https://www.youtube.com/watch?v=xMSykYiq3SY" target="_blank"> D3.js Tutorial 1: Append </a></p>
 
