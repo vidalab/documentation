@@ -1,5 +1,5 @@
 ---
-title: VIDA.IO Web App Documentation
+title: VIDA.IO Web App User Guide
 
 toc_footers:
   - <a href='https://vida.io' target="_blank">VIDA.IO</a>
