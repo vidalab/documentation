@@ -272,9 +272,31 @@ To better understand, one may print the structure in debug console.</p>
 
 <p>This data tab has the editor shown as default. A grid can be viewed (non-editable) once data is saved first.</p>
 
-<p>A d3 document can utilize a dataset document as its own data by setting a dataseting in this tab.
+<p>A d3 document can utilize an external dataset document as its own data. This option can be accessed under Data &gt; Dataset &gt; Use external.
 If a dataset is selected, all current document data will be removed. 
 If a dataset is removed, the current data from dataset document is copied to the current d3 document.</p>
+
+<h3 id="data-multiple-datasets">Data - Multiple datasets</h3>
+
+<p>A document may have mutiple internal datasets that can be added under <strong>Data &gt; Dataset &gt; Add new</strong>.</p>
+
+<p>When adding a new dataset, all current data structure will be moved to <em>data[&#39;data0&rsquo;]</em>. A dataset data can be accessed using the format <em>data[&#39;datasetName&rsquo;]</em>.
+This datasetName has a default name as <em>dataN</em> with N being the number of datasets that exist in the document. The default <em>datasetName</em> can be changed by clicking on the datasetName field to the left. 
+datasetName convention follows a file name convention which includes alphabets, numbers, spaces, dash and underscore.</p>
+
+<p>A currently viewing dataset can be removed using the option <strong>Data &gt; Dataset &gt; Remove current</strong>. This option is unavailable if the document has only 1 dataset.</p>
+
+<p>A document can only have a maximum of 10 datasets.</p>
+
+<p>When switching to an external dataset, all current datasets will be removed. Upon switching back to using internal dataset, all data will be copied over as the sole and only dataset for the document.</p>
+
+<p>Besides, Auto properties detection for axis is applied on the first or primary dataset only.</p>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>Auto properties data column detection will only apply for the first dataset in multiple datasets.</li>
+</ul>
 
 <h3 id="properties">Properties</h3>
 
@@ -301,6 +323,7 @@ By defining a document properties, the owner allow document customization and an
 <li>Properties can be changed only by document owner and shared users with edit access.</li>
 <li>A template child cannot change its properties. They&rsquo;re only available for the template document.</li>
 <li>When a property changes, the document will be saved and re-rendering will be triggered automatically .</li>
+<li>Data column properties will be automatically detected when there&rsquo;s any change from the data column from Data tab.</li>
 </ul>
 
 <h3 id="javascript">Javascript</h3>
