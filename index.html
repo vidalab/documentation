@@ -267,34 +267,47 @@ For VIDA compatible structure, please visit <a href='https://github.com/vidalab/
 <li>JSON</li>
 </ul>
 
-<p>Once saved, the parsed data is piped through the javascript code as &#39;data&rsquo; variable with JSON structure. 
-To better understand, one may print the structure in debug console.</p>
-
 <p>This data tab has the editor shown as default. A grid can be viewed (non-editable) once data is saved first.</p>
 
-<p>A d3 document can utilize an external dataset document as its own data. This option can be accessed under Data &gt; Dataset &gt; Use external.
-If a dataset is selected, all current document data will be removed. 
-If a dataset is removed, the current data from dataset document is copied to the current d3 document.</p>
+<p><strong>Internal</strong></p>
 
-<h3 id="data-multiple-datasets">Data - Multiple datasets</h3>
+<p>By default, each document will have one (1) internal dataset.
+A new dataset can be added using the <strong>Data &gt; Datasets &gt; Add new</strong> option. 
+It has a default name as <em>dataN</em> with N is the number of datasets. Naming a dataset is similarly as naming a file.<br>
+The currently viewing dataset can be removed using the <strong>Data &gt; Datasets &gt; Remove current</strong> option. 
+This option is unavailable if the document has only 1 dataset.</p>
 
-<p>A document may have mutiple internal datasets that can be added under <strong>Data &gt; Dataset &gt; Add new</strong>.</p>
+<p><strong>External</strong></p>
 
-<p>When adding a new dataset, all current data structure will be moved to <em>data[&#39;data0&rsquo;]</em>. A dataset data can be accessed using the format <em>data[&#39;datasetName&rsquo;]</em>.
-This datasetName has a default name as <em>dataN</em> with N being the number of datasets that exist in the document. The default <em>datasetName</em> can be changed by clicking on the datasetName field to the left. 
-datasetName convention follows a file name convention which includes alphabets, numbers, spaces, dash and underscore.</p>
+<p>Each document can be configured to link external datasets as its own data. 
+This option can be accessed under Data &gt; Datasets &gt; Link external.
+When linking external datasets, all current document datasets will be removed upon selecting the first external dataset.
+When unlinking external datasets, all the current external datasets will be copied to the current document.</p>
 
-<p>A currently viewing dataset can be removed using the option <strong>Data &gt; Dataset &gt; Remove current</strong>. This option is unavailable if the document has only 1 dataset.</p>
+<p><strong>Using datasets&rsquo; data</strong></p>
 
-<p>A document can only have a maximum of 10 datasets.</p>
+<p>When a document is saved, the parsed data from this data tab will be available to use within the javascript code through <em>data</em> variable.
+To better understand, one may print the structure in debug console.</p>
 
-<p>When switching to an external dataset, all current datasets will be removed. Upon switching back to using internal dataset, all data will be copied over as the sole and only dataset for the document.</p>
+<p>The data structure is different in case of a single and multiple datasets. </p>
 
-<p>Besides, Auto properties detection for axis is applied on the first or primary dataset only.</p>
+<ul>
+<li>Multiple datasets - each dataset&rsquo;s data can be accessed using <em>data[&#39;datasetName&rsquo;]</em>. 
+
+<ul>
+<li>Example: datasets <em>Weather 2014</em>, <em>Weather 2015</em>, <em>Weather 2016</em>; <em>Weather 2014</em> data is available using <em>data[&#39;Weather 2014&rsquo;]</em>.</li>
+</ul></li>
+<li>Single dataset - instead of using <em>data[&#39;datasetName&rsquo;]</em>, data will be available directly under &#39;data&rsquo; variable
+
+<ul>
+<li>Example: dataset <em>VC Industry 2015</em>, all data will be available using <em>data</em> variable instead of <em>data[&#39;VC Industry 2015&rsquo;]</em>.</li>
+</ul></li>
+</ul>
 
 <p><strong>Notes:</strong></p>
 
 <ul>
+<li>A document can only have a maximum of 10 datasets.</li>
 <li>Auto properties data column detection will only apply for the first dataset in multiple datasets.</li>
 </ul>
 
@@ -545,9 +558,28 @@ To publish, follow the following steps:</p>
 
 <p><strong>Important:</strong> This feature is in beta.</p>
 
-<p>This tool helps quickly building complex visualizations by combining already alvailable d3 documents together.</p>
+<p>Vida composite document is a flexible tool that combines individual d3 documents together to create a complex dashboard. </p>
 
 <p>(Work in progress, please check back for more information)</p>
+
+<h2 id="adding-documents">Adding documents</h2>
+
+<p>There&rsquo;re two (2) ways to add a document in a composite document. </p>
+
+<ul>
+<li><strong>Add My Document</strong> option allows users to add their own documents</li>
+<li><strong>Add VIDA Document</strong> option allows users to add Vida pre-selected documents</li>
+</ul>
+
+<h2 id="applying-master-dataset">Applying master dataset</h2>
+
+<p>All individual documents can share the same master dataset which can be configured using <strong>Select a Dataset</strong> option.
+By choosing a dataset, all individual document will receive the same data passed inside.</p>
+
+<h2 id="edit-properties">Edit properties</h2>
+
+<p>Each document properties are editable and apply to the current composite document only. 
+An individual document may select a different dataset instead of using the shared master dataset.</p>
 
           <h1 id="team">Team</h1>
 
