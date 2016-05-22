@@ -10,7 +10,7 @@ includes:
   - home
   - d3
   - gist
-  - comp
+  - dashboard
   - team
   - gchart
   - dataset

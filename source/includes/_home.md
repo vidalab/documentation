@@ -37,8 +37,7 @@ The panel will show the latest 20 notifications.
   ![alt text](./home/side-nav.png "Sidebar Menu")
 </a>
 
-This section contains menu options to access all of our supported documents (d3, Google chart, gist, composite) and user profile page.
-
+This section contains menu options to access all of our supported documents (d3 document, dashboard, gist) and user profile page.
 
 ## Document List
 <a href="images/home/doc-list.png" data-lightbox="home-screen" data-title="Document List" style="display: block; float:right;">
