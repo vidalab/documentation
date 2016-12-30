@@ -16,6 +16,7 @@ includes:
   - dataset
   - resources
   - faqs
+  - download
 
 search: true
 ---
