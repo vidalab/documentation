@@ -4,7 +4,7 @@ Local builds are available for download. We have support for Windows and Mac.
 
 ## Windows
 
-- Download file: https://s3-us-west-2.amazonaws.com/vida-public/windows/vida-windows-12-16-16.zip
+- <a href="https://s3-us-west-2.amazonaws.com/vida-public/windows/vida-windows-12-16-16.zip" target="_blank">Click here</a> to download Windows build
 - Unzip file to a folder
 - Open 2 command line windows and go to the unzipped folder
 - In the first command line window, start database: start_db.bat
@@ -15,7 +15,7 @@ Note: Press Ctrl+C to exit batch processes. For vida server, after exit, you nee
 
 ## Mac
 
-- Download file: https://s3-us-west-2.amazonaws.com/vida-public/mac/vida-mac-12-29-16.zip
+- <a href="https://s3-us-west-2.amazonaws.com/vida-public/mac/vida-mac-12-29-16.zip">Click here</a> to download Mac build
 - Unzip file to a folder
 - Open 2 command line windows and go to the unzipped folder
 - In the first command line window, start database: start_db.sh
