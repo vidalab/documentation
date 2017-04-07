@@ -15,7 +15,7 @@ Note: Press Ctrl+C to exit batch processes. For vida server, after exit, you nee
 
 ## Mac
 
-- <a href="https://s3-us-west-2.amazonaws.com/vida-public/mac/vida-mac-12-29-16.zip">Click here</a> to download Mac build
+- <a href="https://s3-us-west-2.amazonaws.com/vida-public/mac/vida-mac-04-06-17.zip">Click here</a> to download Mac build
 - Unzip file to a folder
 - Open 2 command line windows and go to the unzipped folder
 - In the first command line window, start database: start_db.sh
