@@ -756,6 +756,19 @@ A dataset can be shared across multiple documents. </p>
 
 <p>Note: Press Cmd+C to exit batch processes. For vida server, after exit, you need to execute &ldquo;cd ..&rdquo; to get outside of bundle directory.</p>
 
+<h2 id="upgrade">Upgrade</h2>
+
+<p>When you upgrade your build, you need to retain the previous data directory.</p>
+
+<ul>
+<li>After you download, rename your previous build into data directory (e.g. vida_data.)</li>
+<li>Extract your new build.</li>
+<li>Go inside vida_data directory, start mongodb database. On mac, start_db.sh. On windows, start_db.bat.</li>
+<li>Go inside your new build directory, start Vida service. On mac, start_vida.sh, On windows, start_vida.bat.</li>
+</ul>
+
+<p>WARNING: Be cautious of deleting any folder. You may not able to recover your data.</p>
+
       </div>
     </div>
     
