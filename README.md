@@ -13,7 +13,9 @@ Developer Info
 ------------------------------
 
 Use ruby 2.2.0: rvm use 2.2.0
+
 To run: bundle exec middleman server
+
 To publish: rake publish
 
 Features
