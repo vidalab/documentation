@@ -23,3 +23,14 @@ Note: Press Ctrl+C to exit batch processes. For vida server, after exit, you nee
 - Open browser and go to application: http://localhost:8080
 
 Note: Press Cmd+C to exit batch processes. For vida server, after exit, you need to execute "cd .." to get outside of bundle directory.
+
+## Upgrade
+
+When you upgrade your build, you need to retain the previous data directory.
+
+- After you download, rename your previous build into data directory (e.g. vida_data.)
+- Extract your new build.
+- Go inside vida_data directory, start mongodb database. On mac, start_db.sh. On windows, start_db.bat.
+- Go inside your new build directory, start Vida service. On mac, start_vida.sh, On windows, start_vida.bat.
+
+WARNING: Be cautious of deleting any folder. You may not able to recover your data.
